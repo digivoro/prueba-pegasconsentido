@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'CircularBlack';
+  font-style: normal;
+  font-display: swap;
+  src: url('~assets/fonts/CircularBlack.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CircularLight';
+  font-style: normal;
+  font-display: swap;
+  src: url('~assets/fonts/CircularLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CircularMedium';
+  font-style: normal;
+  font-display: swap;
+  src: url('~assets/fonts/CircularMedium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CircularRegular';
+  font-style: normal;
+  font-display: swap;
+  src: url('~assets/fonts/CircularRegular.otf') format('opentype');
+}
+
+// Media: xs
+@media (min-width: 0) {
+  .nav {
+    &__link {
+      font-family: 'CircularMedium';
+      font-size: 0.8rem;
+      &-text {
+        color: #000;
+      }
+      &-icon {
+      }
+      &:hover * {
+        color: #3eaeff;
+      }
+    }
+  }
+  .hero {
+    text-align: center;
+
+    &__title {
+      font-family: 'CircularBlack', 'Montserrat', sans-serif;
+      font-size: 2rem;
+    }
+  }
+
+  .subscribe {
+    padding: 2rem;
+    color: #3eaeff;
+    background-color: #e2f7ff;
+    &__title {
+    }
+    &__input {
+    }
+    &__submit {
+    }
+  }
+
+  .footer {
+    &__sitemap {
+      padding: 2rem;
+      color: white;
+      background-color: #26253c;
+    }
+    &__social {
+      padding: 1.5rem;
+      color: white;
+      background-color: #535263;
+    }
+    &__title {
+      margin-bottom: 1rem;
+    }
+    &__link {
+      line-height: 2rem;
+      display: block;
+      text-decoration: none;
+    }
+    &__col {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Media: sm
+@media (min-width: 600px) {
+}
+
+// Media: md
+@media (min-width: 960px) {
+  .subscribe {
+    color: #3eaeff;
+    background-color: #e2f7ff;
+  }
+}
+
+// Media: lg
+@media (min-width: 1264px) {
+}
+
+// Media: xl
+@media (min-width: 1904px) {
+}
